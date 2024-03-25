@@ -6,6 +6,9 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 services
     .AddMudServices()
-    .AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+    .AddScoped(sp => new HttpClient
+    {
+        BaseAddress = new Uri("https://xivapi.com/")
+    });
 
 await builder.Build().RunAsync();

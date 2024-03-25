@@ -1,7 +1,21 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<MudStack>
+    <PageTitle>
+        FFXIV Character Job Levels
+    </PageTitle>
 
-<h1>Hello, world!</h1>
+    <MudInput Label="Lodestone ID"
+              T="long?"
+              @bind-Value="@lodestoneId"
+              AutoFocus
+              Immediate />
 
-Welcome to your new app.
+    <MudButton ButtonType="@ButtonType.Button"
+               OnClick="@OnButtonClick"
+               Variant="@Variant.Filled"
+               Color="@Color.Primary"
+               Disabled="@ButtonDisabled">
+        Get Data
+    </MudButton>
+</MudStack>
