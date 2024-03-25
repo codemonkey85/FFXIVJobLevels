@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FFXIVJobLevels",
   "resources": {
-    "hash": "sha256-bS3V1hZ6e1zBxgm/GVvFXricIkUEjni0lkTQjRHe08A=",
+    "hash": "sha256-Cq9JuDctETJUkUmh5YbjkNdF50a920V6jiYr/rcaQmc=",
     "jsModuleNative": {
       "dotnet.native.8.0.3.np5gge4jb6.js": "sha256-0MFKts/CuiiMzMBrowUd9UOwsS7ysqVk5qGfHK/bG5U="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "FFXIVJobLevels.wasm": "sha256-m62Ukay+zBtKqO6PbbXjcF54i2CzCsVYcQ3IDRg6sj8=",
+      "FFXIVJobLevels.wasm": "sha256-qXGZyVRyKD3TXLjqc3hQhJ16rM/q5+WgqtPTIRaGxCk=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-mD/Kkid5kAbCd8FTvX7nRa1Zrwyztxc16j0tUjgwvKc=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-5xzccvw2tQMCp/30OTLti9Igrhohxn+bxipUW4jORHM=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-5gaOP81KAU7KoBrK09gZ/u74A0HX+TOJ5fGOh7xAHmQ=",
