@@ -5,18 +5,18 @@ public partial class Home
     [Inject]
     private HttpClient? HttpClient { get; set; }
 
-    private long? lodestoneId;
+    private LodeStoneCharacter LodeStoneCharacter { get; set; } = new LodeStoneCharacter();
 
-    private bool ButtonDisabled => lodestoneId is null;
+    private bool ButtonDisabled => LodeStoneCharacter.LodestoneId is null;
 
     private async Task OnButtonClick()
     {
-        if (HttpClient is null || lodestoneId is null)
+        if (HttpClient is null || LodeStoneCharacter.LodestoneId is null)
         {
             return;
         }
 
-        var response = await HttpClient.GetAsync($"character/{lodestoneId}");
+        var response = await HttpClient.GetAsync($"character/{LodeStoneCharacter.LodestoneId}");
 
         if (response.IsSuccessStatusCode is false)
         {
@@ -33,4 +33,9 @@ public partial class Home
             return;
         }
     }
+}
+
+public class LodeStoneCharacter
+{
+    public long? LodestoneId { get; set; }
 }

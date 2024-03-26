@@ -1,21 +1,22 @@
 ﻿@page "/"
 
-<MudStack>
-    <PageTitle>
-        FFXIV Character Job Levels
-    </PageTitle>
+<PageTitle>
+    FFXIV Character Job Levels
+</PageTitle>
 
-    <MudInput Label="Lodestone ID"
-              T="long?"
-              @bind-Value="@lodestoneId"
-              AutoFocus
-              Immediate />
-
-    <MudButton ButtonType="@ButtonType.Submit"
-               OnClick="@OnButtonClick"
-               Variant="@Variant.Filled"
-               Color="@Color.Primary"
-               Disabled="@ButtonDisabled">
-        Get Data
-    </MudButton>
-</MudStack>
+<EditForm Model="@LodeStoneCharacter">
+    <MudStack>
+        <MudInput Label="Lodestone ID"
+                  T="long?"
+                  @bind-Value="@LodeStoneCharacter.LodestoneId"
+                  AutoFocus
+                  Immediate />
+        <MudButton ButtonType="@ButtonType.Submit"
+                   OnClick="@OnButtonClick"
+                   Variant="@Variant.Filled"
+                   Color="@Color.Primary"
+                   Disabled="@ButtonDisabled">
+            Get Data
+        </MudButton>
+    </MudStack>
+</EditForm>
